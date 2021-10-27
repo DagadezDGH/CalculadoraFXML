@@ -93,76 +93,109 @@ public class Controller implements Initializable{
 	
     @FXML
     void on0Action(ActionEvent event) {
-
+    	calculadora.insertar('0');
+    	resultadoText.setText(calculadora.getPantalla());
     }
 
     @FXML
     void on1Action(ActionEvent event) {
-
+       	calculadora.insertar('1');
+    	resultadoText.setText(calculadora.getPantalla());
     }
 
     @FXML
     void on2Action(ActionEvent event) {
-
+       	calculadora.insertar('2');
+    	resultadoText.setText(calculadora.getPantalla());
     }
 
     @FXML
     void on3Action(ActionEvent event) {
-
+       	calculadora.insertar('3');
+    	resultadoText.setText(calculadora.getPantalla());
     }
 
     @FXML
     void on4Action(ActionEvent event) {
-
+       	calculadora.insertar('4');
+    	resultadoText.setText(calculadora.getPantalla());
     }
 
     @FXML
     void on5Action(ActionEvent event) {
-
+       	calculadora.insertar('5');
+    	resultadoText.setText(calculadora.getPantalla());
     }
 
     @FXML
     void on6Action(ActionEvent event) {
-
+       	calculadora.insertar('6');
+    	resultadoText.setText(calculadora.getPantalla());
     }
 
     @FXML
     void on7Action(ActionEvent event) {
-
+       	calculadora.insertar('7');
+    	resultadoText.setText(calculadora.getPantalla());
     }
 
     @FXML
     void on8Action(ActionEvent event) {
-
+       	calculadora.insertar('8');
+    	resultadoText.setText(calculadora.getPantalla());
     }
 
     @FXML
     void on9Action(ActionEvent event) {
-
+       	calculadora.insertar('9');
+    	resultadoText.setText(calculadora.getPantalla());
     }
 
     @FXML
-    void onDivideAction(ActionEvent event) {
+    void onCAction(ActionEvent event) {
+    	calculadora.borrar();
+    	resultadoText.setText(calculadora.getPantalla());
+    }
 
+    @FXML
+    void onCEAction(ActionEvent event) {
+    	calculadora.borrarTodo();
+    	resultadoText.setText(calculadora.getPantalla());
+    }
+
+    @FXML
+    void onComaAction(ActionEvent event) {
+    	calculadora.insertarComa();
+    	resultadoText.setText(calculadora.getPantalla());
+    }
+    @FXML
+    void onDivideAction(ActionEvent event) {
+    	calculadora.operar(Calculadora.DIVIDIR);
+    	resultadoText.setText(calculadora.getPantalla());
     }
 
     @FXML
     void onIgualAction(ActionEvent event) {
-
+    	calculadora.operar(Calculadora.IGUAL);
+    	resultadoText.setText(calculadora.getPantalla());
     }
 
     @FXML
     void onMultiAction(ActionEvent event) {
-
+    	calculadora.operar(Calculadora.MULTIPLICAR);
+    	resultadoText.setText(calculadora.getPantalla());
     }
 
     @FXML
     void onRestAction(ActionEvent event) {
-
+    	calculadora.operar(Calculadora.RESTAR);
+    	resultadoText.setText(calculadora.getPantalla());
     }
 
     @FXML
     void onSumAction(ActionEvent event) {
+    	calculadora.operar(Calculadora.SUMAR);
+    	resultadoText.setText(calculadora.getPantalla());
 
     }
 
