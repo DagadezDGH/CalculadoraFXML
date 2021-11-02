@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-<GridPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/16">
+<GridPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
   <columnConstraints>
       <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
       <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -39,7 +39,7 @@
             <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
          </GridPane.margin>
       </Button>
-      <Button fx:id="ceButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="CE" GridPane.columnIndex="3" GridPane.rowIndex="1">
+      <Button fx:id="ceButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onCEAction" text="CE" GridPane.columnIndex="3" GridPane.rowIndex="1">
          <GridPane.margin>
             <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
          </GridPane.margin>
@@ -84,7 +84,7 @@
             <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
          </GridPane.margin>
       </Button>
-      <Button fx:id="comaButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="." GridPane.columnIndex="2" GridPane.rowIndex="4">
+      <Button fx:id="comaButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onComaAction" text="." GridPane.columnIndex="2" GridPane.rowIndex="4">
          <GridPane.margin>
             <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
          </GridPane.margin>
@@ -99,7 +99,7 @@
             <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
          </GridPane.margin>
       </Button>
-      <Button fx:id="cButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="C" GridPane.columnIndex="4" GridPane.rowIndex="1">
+      <Button fx:id="cButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onCAction" text="C" GridPane.columnIndex="4" GridPane.rowIndex="1">
          <GridPane.margin>
             <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
          </GridPane.margin>
