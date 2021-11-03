@@ -10,6 +10,8 @@ public class App extends Application {
 
 	@Override
 	public void start(Stage primaryStage) throws IOException {
+		
+		primaryStage.setTitle("CalculadoraFXML");
 		Controller controller = new Controller();
 		Scene scene = new Scene(controller.getView(), 500, 320);
 		primaryStage.setScene(scene);
