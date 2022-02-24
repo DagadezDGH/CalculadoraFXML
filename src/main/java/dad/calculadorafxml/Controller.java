@@ -9,6 +9,8 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
+import javafx.scene.control.ContextMenu;
+import javafx.scene.control.MenuItem;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
 
@@ -85,6 +87,25 @@ public class Controller implements Initializable{
 	public void initialize(URL location, ResourceBundle resources) {
 		// TODO Auto-generated method stub
 		
+		MenuItem classicStyle = new MenuItem("Clásico");
+		MenuItem modernStyle = new MenuItem("Moderno");
+		
+		classicStyle.setOnAction(e-> {
+			root.getStylesheets().setAll("/css/ClassicStyle.css");
+			System.out.println("Estilo clásico seleccionado");
+		});
+		
+		modernStyle.setOnAction(e -> {
+			root.getStylesheets().setAll("/css/ModernStyle.css");
+			System.out.println("Estilo moderno seleccionado");
+		});
+		ContextMenu menu = new ContextMenu(classicStyle, modernStyle);
+		
+		root.setOnContextMenuRequested(e->{
+			menu.show(root, e.getScreenX(), e.getScreenY());
+		});
+		
+		cButton.setContextMenu(menu);
 	}
 	
 	public GridPane getView() {
